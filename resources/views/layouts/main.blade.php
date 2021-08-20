@@ -5,6 +5,7 @@
     <title>My addresses</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
 </head>
 
 <body>

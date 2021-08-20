@@ -1274,3 +1274,7 @@ label:hover .jq-checkbox.checked {background-position: -120px -178px;}
 .block-link-edit {display: block;}
 form .input-danger {border-color: red;}
 .uo_adr_list .success-message {display: block; background-color: rgba(40, 225, 40, 0.8); border-radius: 5px; min-height: 40px; line-height: 40px; margin: 20px 0; padding: 0 20px; font-weight: bold; color: #fff; font-size: 15px;}
+.info-hr {margin: 5px 0; border: 1px solid #c3c6ca; border-top: 0;}
+.uo_adr_list .active-item {background-color: #ffe3a6;}
+.heading-link {color: #000;}
+.heading-link:hover, .heading-link:focus {text-decoration: underline;}

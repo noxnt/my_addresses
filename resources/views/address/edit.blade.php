@@ -78,39 +78,14 @@
                         </div>
 
                         <div class="field">
-                            <input type="submit" class="green_btn"/>
+                            <input type="submit" class="green_btn" value="Update"/>
                         </div>
                     </form>
                 </div>
 
                 <div class="r_col">
-                    <h2>My Addresses</h2>
-
-                    <div class="uo_adr_list">
-                        @if (session('message'))
-                            <p class="success-message">{{ session('message') }}</p>
-                        @endif
-
-                        @foreach($addresses as $address)
-                            <div data-id="{{ $address->id }}">
-                                <a href="{{ route('addresses.edit', $address->id) }}" class="item block-link-edit">
-                                    <h3>{{ $address->name }}</h3>
-                                    <p>
-                                        {{ $address->area->name }},
-                                        {{ $address->city->name }},
-                                        {{ $address->street }},
-                                        {{ $address->house }}
-                                    </p>
-
-                                    <form class="actbox" action="{{ route('addresses.destroy', $address->id) }}" method="POST">
-                                        @csrf
-                                        @method('delete')
-                                        <input class="bcross" type="submit" value="">
-                                    </form>
-                                </a>
-                            </div>
-                        @endforeach
-                    </div>
+                    <h2><a href="{{ route('addresses.index') }}" class="heading-link">My Addresses</a></h2>
+                    @include('includes.address.list')
                 </div>
             </div>
         </div>
